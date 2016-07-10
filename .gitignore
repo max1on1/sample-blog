@@ -12,3 +12,7 @@ tmp/cache/assets/sprockets/v3.0/4Z/4ZZC2-SYYOJ4_uSS3xVOzz0kdZtysr0CIcXTOFOjyGo.c
 tmp/cache/assets/sprockets/v3.0/4C/4CgTGXEBB9z4PQ1ivp5y1wkh5KJWjCMUIiG7Reqo7b8.cache
 log/development.log
 db/development.sqlite3
+log/development.log
+tmp/pids/server.pid
+log/development.log
+db/development.sqlite3
