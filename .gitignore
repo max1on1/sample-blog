@@ -16,3 +16,7 @@ log/development.log
 tmp/pids/server.pid
 log/development.log
 db/development.sqlite3
+tmp/cache/assets/sprockets/v3.0/7h/7h9pzPMePpqE1YRHHFjdiq90PCcJlInkdc-bVxLS31s.cache
+tmp/cache/assets/sprockets/v3.0/HA/hasr_En7o5LtVj809AnvRcvLCoeKodTRGpWfNUIhUvs.cache
+tmp/cache/assets/sprockets/v3.0/uy/uyu1xkqvGqxG923_P4iAUWJI66ZML68EHwhZYwuIOgI.cache
+tmp/cache/assets/sprockets/v3.0/v5/v5qry2QyxO3DnajWafsz8cmWtF-GhRbaBm3L-CR41ZY.cache
