@@ -5231,3 +5231,71 @@ Processing by ArticlesController#show as HTML
   [1m[35mArticle Load (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
   Rendered articles/show.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 97ms (Views: 94.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/" for ::1 at 2016-07-10 16:47:16 +0300
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.erb within layouts/application (29.0ms)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>List of Articles</h1>
+    2: <% @articles.each do |article| %>
+    3: 
+    4: <h2><%= article.title %></h2>
+    5: 
+  app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb___1596244296_95971600'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.5ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (784.1ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (691.9ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.5ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1579.2ms)
+
+
+Started GET "/articles/" for ::1 at 2016-07-10 16:48:05 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (3.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 141ms (Views: 130.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 16:48:05 +0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-10 16:48:05 +0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-10 16:48:05 +0300
+
+
+Started GET "/assets/contacts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 16:48:05 +0300
+
+
+Started GET "/assets/application.self-b5e238d25666444d448315ce0807787bc947281172717e2277c0cebab2884300.css?body=1" for ::1 at 2016-07-10 16:48:05 +0300
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-10 16:48:06 +0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-10 16:48:06 +0300
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 16:48:06 +0300
+
+
+Started GET "/assets/contacts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 16:48:06 +0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-10 16:48:06 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-10 16:48:06 +0300
